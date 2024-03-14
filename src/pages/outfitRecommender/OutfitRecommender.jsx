@@ -5,7 +5,7 @@ import Error from '../../components/Error';
 
 import PhotoPreview from '../../components/PhotoPreview';
 import FileInput from '../../components/FileInput';
-import './OutfitRecommender.css';
+import classes from './OutfitRecommender.module.css';
 
 const OutfitRecommender = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -66,7 +66,7 @@ const OutfitRecommender = () => {
   };
 
   return (
-    <div className="app">
+    <div className={classes.app}>
       <h1>Outfit Recommender</h1>
       <FileInput handleImageUpload={handleImageUpload} />
       {selectedImage && (<PhotoPreview selectedImage={selectedImage} handleImageSubmit={handleImageSubmit} />)}

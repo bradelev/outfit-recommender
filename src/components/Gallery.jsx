@@ -1,8 +1,8 @@
-import "./Gallery.css";
+import classes from "./Gallery.module.css";
 
 const Gallery = ({ photos }) => {
     return (
-        <div className="gallery">
+        <div className={classes.gallery}>
             {photos.map((photo, index) => (
                 <img key={index} src={photo} alt={`Photo ${index}`} />
             ))}
