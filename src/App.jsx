@@ -16,7 +16,7 @@ const App = () => {
       element: <Home />,
     },
     {
-      path: '/outfit-recommender',
+      path: '/choose-outfit',
       element: <OutfitRecommender />,
     },
   ]);
